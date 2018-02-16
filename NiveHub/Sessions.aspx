@@ -11,6 +11,7 @@
         if (!String.IsNullOrEmpty(TextBox1.Text) &
             !String.IsNullOrEmpty(TextBox2.Text))
         {
+
             string itemName = Server.HtmlEncode(TextBox1.Text);
             string itemValue = Server.HtmlEncode(TextBox2.Text);
             Session.Add(itemName, itemValue);
