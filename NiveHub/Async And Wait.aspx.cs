@@ -30,12 +30,30 @@ namespace NiveHub
             return totalword;
         }
         // using task to manage work
-        protected async void Page_Load(object sender, EventArgs e)
+        protected  void Page_Load(object sender, EventArgs e)
         {
-            Task<int> processor = new Task<int>(readFileCharacter);
-            processor.Start();
-            int value = await processor;
-            Response.Write("Total Characters are :" + value);
+            
+        }
+
+        public int countString()
+        {
+            string _sentence = Totalwords.Text;
+            string wordToFind = Key.Text;
+            char[] Sentence = _sentence.ToCharArray();
+            int count = 0;
+            foreach (char abc in Sentence)
+            {
+                if (Convert.ToChar(wordToFind) == abc)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            int finalValue = countString();
+            Response.Write("A total of :" + finalValue + "Matches Found");
         }
     }
 }
