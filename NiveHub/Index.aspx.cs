@@ -14,16 +14,15 @@ namespace NiveHub
 
         }
         public void abc()
-        {
-            Response.Write("Check out the family tree: <br/> <br/>");
+        {    
+             Response.Write(" You can use the Application object to share information among all users of a given application. <br/> <br/>");
             Response.Write(this.GetType().ToString());
-            Response.Write(" which derives from: <br/> ");
+            Response.Write(" An ASP-based application is defined as all the.asp files in a virtual directory and its subdirectories.Because the: <br/> ");
             Response.Write(this.GetType().BaseType.ToString());
-            Response.Write(" which derives from: <br/> ");
+            Response.Write(" Application object can be shared by more than one user, there are Lock and Unlock methods to ensure that multiple users do not try to alter a property simultaneously. <br/> ");
             Response.Write(this.GetType().BaseType.BaseType.ToString());
-            Response.Write(" which derives from: <br/> ");
-            Response.Write(this.GetType().BaseType.BaseType.BaseType.ToString());
-            
+            Application["User"] = "Sunny";
+            Application.Contents.Remove("Sunny");
         }
     }
 }
