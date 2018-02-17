@@ -23,6 +23,8 @@
 <body>
    
     <form id="form1" runat="server">
+        <h2>Application Object (IIS)</h2>
+        
     <div class="centerW">
     <h3 >
         My Application Asp.net Basic
