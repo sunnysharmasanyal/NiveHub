@@ -11,8 +11,7 @@ namespace NiveHub
 {
     public partial class Async_And_Wait : System.Web.UI.Page
     {
-        // this is the simple method which is able to count the number of character 
-        // using the function as seen below..
+       
      
         
         public  int readFileCharacter()
@@ -34,7 +33,7 @@ namespace NiveHub
         {
             
         }
-
+         // Method responsible for counting key in string
         public int countString()
         {
             string _sentence = Totalwords.Text;
